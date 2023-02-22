@@ -21,7 +21,7 @@ namespace Expense_Tracker.Controllers
         // GET: Category
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Categories.ToListAsync());
+            return View(await _context.Categories.ToListAsync());
         }
 
         // GET: Category/Details/5
@@ -45,7 +45,7 @@ namespace Expense_Tracker.Controllers
         // GET: Category/Create
         public IActionResult Create()
         {
-            return View();
+            return View(new Category());
         }
 
         // POST: Category/Create
@@ -147,14 +147,14 @@ namespace Expense_Tracker.Controllers
             {
                 _context.Categories.Remove(category);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool CategoryExists(int id)
         {
-          return _context.Categories.Any(e => e.CategoryID == id);
+            return _context.Categories.Any(e => e.CategoryID == id);
         }
     }
 }
