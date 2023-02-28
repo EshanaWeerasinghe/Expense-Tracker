@@ -8,7 +8,7 @@ namespace Expense_Tracker.Models
         [Key]
         public int CategoryID { get; set; }
 
-        [Column(TypeName="nvarchar(50)")]
+        [Column(TypeName = "nvarchar(50)")]
         public string? Title { get; set; }
 
         [Column(TypeName = "nvarchar(5)")]
@@ -18,12 +18,12 @@ namespace Expense_Tracker.Models
         public string Type { get; set; } = "Expense";
 
         [NotMapped]
-        public string? TitleWithIcon {
+        public string? TitleWithIcon
+        {
             get
             {
-               return this.Icon+""+ this.Title; 
-            } 
-
+                return this.Icon + "" + this.Title;
+            }
         }
     }
 }
