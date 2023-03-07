@@ -24,9 +24,9 @@ body {
 }
 
 /*Button*/
-.btn:focus, .btn:active{
-    outline:none !important;
-    box-shadow:none;
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none;
 }
 
 /*Hyperlink*/
@@ -35,15 +35,14 @@ body {
     color: inherit;
 }
 
-.e-grid{
-    border:0;
-    border-radius:5px;
+.e-grid {
+    border: 0;
+    border-radius: 5px;
 }
-
 
 /*
 Radio button Group */
-.e-btn-group.custom-rbt-group{
+.e-btn-group.custom-rbt-group {
     width: 100%;
 }
 
@@ -51,20 +50,20 @@ Radio button Group */
     width: 50%;
 }
 
-.custom-rbt-group label.e-btn{
-box-shadow:none !important;
-border:1px solid #fff;
-background-color:rgb(34 43 51);
-color: #fff
+.custom-rbt-group label.e-btn {
+    box-shadow: none !important;
+    border: 1px solid #fff;
+    background-color: rgb(34 43 51);
+    color: #fff
 }
 
 .e-btn-group.custom-rbt-group input:checked + label.e-btn {
-background-color: #fff;
-color: #212b36;
-border: 1px solid #fff;
+    background-color: #fff;
+    color: #212b36;
+    border: 1px solid #fff;
 }
 
-.widget{
-    border-radius:1rem;
+.widget {
+    border-radius: 1rem;
     background-color: #1a222b;
 }
