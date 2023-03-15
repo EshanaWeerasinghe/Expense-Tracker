@@ -38,10 +38,28 @@
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <main role="main" class="pb-3">
+                    <div class="col-md-7">
+                        <div class="d-flex flex-column mb-5">
+                            <div class="d-flex mb-1">
+                                <div class="flex-grow-1">
+                                    <h3 class="fw-bold">@ViewData["PageTitle"]</h3>
+                                </div>
+                                <div>
+                                    @if(ViewData["pageActionText"]!=null)
+                                    {
+                                    <a class="btn btn-success" href="@ViewData["pageActionUrl"]">
+                                        @ViewData["PageActionText"]
+                                    </a>
+                                    }
+                                </div>
+                            </div>
+                            @*breadcrumb*@
+                        </div>
+                    </div>
                     @RenderBody()
                 </main>
             </div>
-        </div>    
+        </div>
     </div>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
